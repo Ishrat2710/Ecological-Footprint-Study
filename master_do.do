@@ -124,7 +124,7 @@ qnorm resid_ardl
 regress D.lnECF L.lnECF GDPG lnTNR lnACE lnN2O
 
 *CUSUM	
-cusum6 D.lnECF L.lnECF GDPG lnTNR lnACE lnNO2PowerIndstry, ///
+cusum6 D.lnECF L.lnECF GDPG lnTNR lnACE lnN2O, ///
     cs(cusum_line) ///
     lw(lower_b) ///
     uw(upper_b)
@@ -146,7 +146,7 @@ twoway ///
     name(CUSUM, replace)
 	
 *CUSUMSQ
-cusum6 D.lnECF L.lnECF GDPG lnTNR lnACE lnNO2PowerIndstry, ///
+cusum6 D.lnECF L.lnECF GDPG lnTNR lnACE lnN2O, ///
     cs2(cusumsq_line) ///
     lww(lower_sq) ///
     uww(upper_sq) ///
