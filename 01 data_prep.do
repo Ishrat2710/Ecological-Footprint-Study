@@ -2,7 +2,7 @@
 *Author-Ishrat Jahan
 *Requires Stata 16+
 
-version 16
+version 17
 clear all
 set more off
 *  edit paths to match your local folder structure
