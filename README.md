@@ -46,14 +46,11 @@ ecological-footprint-bangladesh/
 │
 └── code/
     ├── 01_data_prep.do
-    ├── 02_descriptive_statistics.do
-    ├── 03_unit_root_tests.do
-    ├── 04_ardl.do
-    ├── 05_diagnostics.do
-    ├── 06_var_granger.do
-    ├── 07_irf.do
-    ├── 08_fevd.do
-    └── 09_master_do.do
+    ├── 02_unit_root_tests.do
+    ├── 03_ardl.do
+    ├── 04_diagnostics.do
+    ├── 05_var_granger.do
+    └── master_do.do
 ```
 
 ---
