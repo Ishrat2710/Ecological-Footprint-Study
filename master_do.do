@@ -189,15 +189,19 @@ irf create ecf_irf, step(10) replace
 
 * Response of ecological footprint to shocks, use title when you want
 irf graph oirf, ///
-    impulse(lnN2O GDPG lnTNR lnACE) ///
+    impulse(GDPG lnACE lnECF lnN2O lnTNR) ///
     response(lnECF) ///
-    yline(0) ///
-    title("Impulse Response of Ecological Footprint") 
+    yline(0, lcolor(black)) ///
+    xlabel(0(2)10) ///
+    byopts(cols(3) compact) ///
+    title("")
 
 * 10. Forecast Error Variance Decomposition 
 irf table fevd, response(lnECF)
+* FEVD graph
 irf graph fevd, ///
     response(lnECF) ///
-    title("Forecast Error Variance Decomposition of lnECF")
-
+    xlabel(0(2)10) ///
+    byopts(cols(3) compact) ///
+    title("") 
 * 11. END
